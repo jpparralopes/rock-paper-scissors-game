@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <header>
+    <h1><strong>Rock Paper Scissors</strong></h1>
+    <img src="imgs/rock-paper-scissors_img.png" alt="rock-paper-scissors">
+    <p>Choose your move and see if you can beat computer!</p>
+    </header>
+
+    <div id="moves-buttons">
+    <button onclick="playerChoice('rock')" id="btn-rock">
+        <img src="imgs/rock_img.png" alt="rock">
+        <p>Rock</p>
+    </button>
+    <button onclick="playerChoice('paper')" id="btn-paper">
+        <img src="imgs/paper_img.png" alt="paper">
+        <p>Paper</p>
+    </button>
+    <button onclick="playerChoice('scissors')" id="btn-scissors">
+        <img src="imgs/scissors_img.png" alt="scissors">
+        <p>Scissors</p>
+    </button>
+    </div>
+
+    <div id="game-results">
+        <div id="player-results">
+            <p>You picked</p>
+            <img id="player-move-img" src="" alt="player move">
+            <p id="player-move">?</p>
+        </div>
+
+        <div id="result-center">
+            <p id="result-title">Result</p>
+            <p id="result-detail">Waiting for your move...</p>
+        </div>
+
+        <div id="computer-results">
+            <p>Computer picked</p>
+            <img id="computer-move-img" src="" alt="computer move">
+            <p id="computer-move">?</p>
+        </div>
+
+        <div id="score-box">
+            <p>Score</p>
+            <span id="player-score">0</span>
+            <span> - </span>
+            <span id="computer-score">0</span>
+        </div>
+
+        <button id="play-again-btn">Play Again</button>
+    </div>
+
+<script src="script.js" ></script>
+</body>
+</html>
